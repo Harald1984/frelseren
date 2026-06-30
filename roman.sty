@@ -1,0 +1,23 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{roman}[2026/06/07 Roman]
+
+
+\RequirePackage{makecell}
+\RequirePackage[Bjornstrup]{fncychap}
+%\RequirePackage{fancyhdr}
+
+\RequirePackage[colorlinks]{hyperref}
+
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{%
+  \clearpage
+  {\pagestyle{empty}\origdoublepage}%
+}
+\let\cleardoublepage\clearemptydoublepage
+
+
+\pagestyle{plain}
+%\fancyhead[L]{\nouppercase{\rightmark}}
+%\fancyhead[R]{\nouppercase{\leftmark}}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyfoot[C]{\thepage}

@@ -1,0 +1,38 @@
+\documentclass[12pt]{book}
+\usepackage{roman}
+
+
+\usepackage[colorlinks]{hyperref}
+
+\usepackage{polyglossia}
+
+\usepackage{xcolor} % Required for specifying custom colours
+\definecolor{grey}{rgb}{0.9,0.9,0.9}
+%\usepackage[url=true, style=chicago-authordate, backend=biber]{biblatex}
+
+\setmainlanguage[variant=bokmal]{norwegian} 
+%\addbibresource{religion.bib}
+
+
+\usepackage{xcolor} % Required for specifying custom colours
+\definecolor{grey}{rgb}{0.9,0.9,0.9} 
+
+\includeonly{maria, tempelet}
+
+
+\begin{document}
+\frontmatter
+%\include{frontmatter}
+%\include{forord}
+
+
+\mainmatter
+\include{maria}
+\include{tempelet}
+
+\appendix
+%\input{tidslinje}
+%\cleardoublepage
+%\printbibliography
+
+\end{document}
